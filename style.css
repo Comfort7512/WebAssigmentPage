@@ -1,0 +1,289 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  position: sticky;
+  top:0;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ff1b1b;
+  height: 15vh;
+  padding: 1rem;
+}
+.navbar .head{
+  font-size: 1.5rem;
+}
+.navbar ul{
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+.navbar a{
+text-decoration: none;
+color: white;
+/* font-size: 1.2rem; */
+transition: text-decoration 0.3s;
+}
+.navbar a:hover{
+  text-decoration: underline;
+}
+
+.hero{
+  background-color: rgb(3, 3, 3);
+  padding-top:100px ;
+  padding-bottom: 200px;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to right,
+  
+  rgba(0,0,0,0.7),
+   rgba(0,0,0,0.4),
+   rgba(0,0,0,0)),
+   url(img/dark-surface-with-blank-space-fast-food-menu.resized.jpg);
+ 
+}
+
+.hero p{
+  color: white;
+  margin-left: 15%;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  
+}
+.buttons button{
+  padding:1rem 1.5rem;
+  background-color: #ff1b1b;
+  border: none;
+  border-radius:2px ;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease;
+  
+}
+.hero .order {
+  background-color: transparent;
+  border: 2px solid white;
+}
+.buttons button:hover{
+  transform: scale(1.2);
+}
+.buttons a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main container styling */
+.deals {
+  display: flex; 
+  gap: 20px; 
+  background-color: rgb(142, 0, 0); 
+  height: 50vh; 
+}
+
+
+.deals div {
+  height: 200px; 
+  width: 200px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  margin: 20px auto; 
+  cursor: pointer; 
+  border: 1px solid black; 
+  flex-wrap: wrap; 
+}
+
+/* Menu Section Styling */
+.deals .menu {
+  color: gold; 
+  font-weight: bold; 
+  font-size: 1.5rem; 
+  flex-direction: column; 
+  background-color: #ff1b1b; 
+  background-image: url(img/fried-chicken-french-fries-black-cement-floor.jpg); 
+}
+
+/* Menu Button Styling */
+.deals .explore {
+  padding: 1rem 1.5rem;
+  border: none; 
+  margin-top: 5rem;
+  border-radius: 2px; 
+}
+
+/* Menu Link Styling */
+.deals .menu a {
+  color: white; /* Link text color */
+  text-decoration: none; /* Removes underline */
+}
+
+/* Deals Section Styling */
+.deals .deal {
+  flex-direction: column; /* Stacks content vertically */
+  color: whitesmoke; /* Text color */
+  font-weight: bold; /* Bold text */
+  font-size: 1.5rem; /* Larger font size */
+  background-image: url(img/DEALS.jpg); /* Background image */
+}
+
+/* Deals Button Styling */
+.deals .deal button {
+  padding: 1rem; /* Button padding */
+  background-color: goldenrod; /* Button background color */
+  border: none; /* Removes default border */
+  margin-top: 5rem; /* Adds top margin to push button down */
+}
+
+/* Location Section Styling */
+.deals .location {
+  flex-direction: column; /* Stacks content vertically */
+  background-image: url(img/fast-food\ \(1\).png); /* Background image */
+}
+
+/* Location Button Styling */
+.deals .location button {
+  background-color: transparent; /* Transparent background */
+  padding: 1rem 1.5rem; /* Button padding */
+  border: none; /* Removes default border */
+  margin-top: 5rem; /* Adds top margin to push button down */
+  border-radius: 2px; /* Slightly rounded corners */
+  border: 2px solid white; /* White border */
+}
+
+/* Location Link Styling */
+.deals .location a {
+  text-decoration: none; /* Removes underline */
+  color: white; /* Link text color */
+  font-weight: bold; /* Bold text */
+}
+
+
+  .about-section{
+  
+    max-width: 1200px;
+    display: flex;
+    margin: 40px auto;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .about-image{
+    flex: 1;
+    min-width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .about-image img{
+    width: 100%;
+    display: block;
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .about-image img:hover{
+    transform: scale(1.1);
+  }
+  .about-content{
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .about-content h2{
+    margin-bottom: 20px;
+    color: #ff1b1b;
+  }
+  .about-content p{
+    line-height: 2;
+    text-align: justify;
+    flex-wrap: wrap;
+
+  }
+  
+
+  /* @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .about-image, .about-content {
+      min-width: 100%;
+    }
+  } */
+
+  .footer {
+   min-height: 30vh;
+   background-color: #333;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+  }
+  .footer ul{
+    list-style: none;
+  }
+  .footer .quicklinks a{
+    text-decoration: underline;
+    color: white;
+    font-size: 1rem;
+    padding: 2rem;
+    
+    font-style: italic;
+    
+  }
+  .footer .quicklinks li{
+    margin-bottom: 5px;
+  }
+  .footer .quicklinks li:hover{
+   transform: scale(1.1);
+  }
+ 
+   .icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+   }
+   .icons .follow h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+   }
+   .icons .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+   }
+  .icons .icon a{
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+  .icons .icon i{
+    color: red;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+  }
+  .icons .icon i:hover{
+    transform: scale(1.5);
+  }
