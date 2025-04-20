@@ -119,7 +119,7 @@ header{
 /* The hero section */
 .hero{
   min-height: 70vh;
-  background-image: url(images/dark-surface-with-blank-space-fast-food-menu.resized.jpg);
+  background-image: url(dark-surface-with-blank-space-fast-food-menu.resized.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
