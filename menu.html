@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chilli Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hero-menu-section {
+  height: 30vh;
+  background-color: #da000d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.contain {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contain h1 {
+  color: ;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;/* 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+}
+
+.menu-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.menu-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-nav a:hover {
+  color: #ffcc00;
+}
+
+
+.menu-nav li:last-child a::after {
+  content: "";
+}
+
+
+
+ .contain h1{
+  color:white;
+  text-indent: 10px;
+   
+ }
+ .main-container{
+  background-color: rgb(242, 242, 242);
+  /* margin-bottom: 2rem; */
+ }
+ .Burger-heading{
+  text-align: center;
+  color:black;
+  padding:1rem;
+ }
+
+ .burgers{
+  margin:0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  gap:50px;
+  padding: 1rem;
+ }
+ .burger1{
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  padding: 10px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  width: 100%;
+  
+ }
+ .burger1 img{
+  width: 100%;
+ }
+ .addToOrder{
+  padding: 1rem;
+  background-color: rgb(255, 40, 40);
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+ }
+ .burger1:hover {
+  transform: translateY(-5px); 
+}
+
+
+/* chicken styles */
+.chicken-heading{
+  text-align: center;
+  color: red;
+  padding: 1rem;
+}
+.chicken-chips{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+.chicken-2{
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  padding: 10px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  width: 100%;
+}
+.chicken-2:hover{
+  transform: translateY(-5px);
+}
+.chicken-2 img{
+  width: 100%;
+}
+/* beverages section */
+.beverages-heading{
+  text-align: center;
+  color: red;
+  padding: 1rem;
+}
+.beverages{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* margin-bottom: 2rem; */
+}
+.drink{
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  padding: 10px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  width: 100%;
+}
+.drink:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+.drink img{
+  width: 100%;
+}
+/* Desserts section */
+.dessert-heading{
+  text-align: center;
+  color: red;
+  padding: 1rem;
+}
+.desserts{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+.desserts img{
+  width: 100%;
+}
+.cake{
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  padding: 10px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  width:250px;
+}
+/* Checkout button styles */
+.checkout-section {
+  text-align: center;
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-top: 2px solid #da000d;
+}
+
+.checkout-btn {
+  background-color: #da000d;
+  color: white;
+  border: none;
+  padding: 1.2rem 3rem;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.checkout-btn:hover {
+  background-color: #b3000a;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.checkout-btn i {
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .hero-menu-section {
+    height: auto;
+    padding: 3rem 0;
+  }
+  
+  .contain h1 {
+    font-size: 2rem;
+  }
+  
+  .menu-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .menu-nav a {
+    font-size: 1rem;
+  }
+  
+  /* Remove all pipe characters on mobile */
+  .menu-nav a::after {
+    content: "";
+  }
+  .chicken-chips, .beverages, .desserts, .burgers{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cake{
+    width: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="brand" style="text-shadow: 10px 10px 10px rgb(0, 0, 0); font-size: 3.5rem;">ChilliBite
+        <p style="font-size: 1rem; text-shadow: none;">Quality meets convenience.</p>
+      </div>
+      <ul class="navLinks">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-menu-section">
+    <div class="contain">
+      <div><h1 >Welcome To Our Menu</h1></div>
+      <div class="menu-nav">
+        <ul>
+          <li><a href="#burges">Burgers |</a></li>
+          <li><a href="#chicks">Chicken and Fries |</a></li>
+          <li><a href="#beves">Beverages |</a></li>
+          <li><a href="#dessert">Desserts |</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+   <main>
+    <div class="main-container">
+      <h2 class="Burger-heading">Burgers</h2>
+      <div id="burges" class="burgers">
+         <div class="burger1">
+         <img src="/menuimages/mafe-estudio-LV2p9Utbkbw-unsplash.jpg" alt="burger" height="200px" >
+         <h2> Vegatable and Salad </h2>
+         <p>P25.00</p>
+         <button class="addToOrder">Add to Order</button>
+         </div>
+         <div class="burger1">
+          <img src="/menuimages/Double Oldtimer.avif" alt="burger" height="200px" >
+          <h2> Double OldTimer</h2>
+          <p>P30.60</p>
+          <button class="addToOrder">Add to Order</button>
+         </div>
+          <div class="burger1">
+            <img src="/menuimages/The Big QP Burger.avif" alt="burger" height="200px" >
+            <h2>The Big QP Burger</h2>
+            <p>P23.50</p>
+            <button class="addToOrder">Add to Order</button>
+           </div>
+            <div class="burger1">
+              <img src="/menuimages/image.png" alt="burger" height="200px" >
+              <h2>BBQ Brisket Burger</h2>
+              <p>P20.00</p>
+              <button class="addToOrder">Add to Order</button>
+            </div>
+      </div>
+
+      <!-- chicken section
+ -->
+      <div class="chicken-heading"><h2>Chicken and Fries</h2></div>
+      <div id="chicks" class="chicken-chips">
+        <div class="chicken-2">
+          <img src="chickenAndFries/image copy 3.png" alt="" height="200" width="200">
+          <h3>Two Chicken and Fries</h3>
+          <p>P30.00</p>
+          <button class="addToOrder">Add to Order</button>
+        </div>
+        <div class="chicken-2">
+          <img src="chickenAndFries/image copy 2.png" alt="" height="200" width="200">
+          <h3>Two Chicken and Fries</h3>
+          <p>P30.00</p>
+          <button class="addToOrder">Add to Order</button>
+        </div>
+        <div class="chicken-2">
+          <img src="chickenAndFries/image copy.png" alt="" width="200" height="200">
+          <h3>Two Chicken and Fries</h3>
+          <p>P30.00</p>
+          <button class="addToOrder">Add to Order</button>
+        </div>
+        <div class="chicken-2">
+          <img src="chickenAndFries/image.png" alt="" width="200" height="200">
+          <h3>Two Chicken and Fries</h3>
+          <p>P30.00</p>
+          <button class="addToOrder">Add to Order</button>
+        </div>
+      </div>
+
+      <!-- Drinks heading -->
+       <div id="beves" class="beverages-heading"><h2><a href="beves">Beverages</a></h2></div>
+       <div class="beverages">
+         <div class="drink">
+          <img src="DrinksImages/image copy 5.png" alt="" width="200" height="200" style="background-color: white;">
+          <h3>Fanta Drink</h3>
+          <p>P20.00</p>
+          <button class="addToOrder">Add to Order</button>
+         </div>
+
+         <div class="drink">
+          <img src="DrinksImages/image copy 3.png" alt="" width="200" height="200" loading="lazy">
+          <h3>Fanta Drink</h3>
+          <p>P20.00</p>
+          <button class="addToOrder">Add to Order</button>
+         </div>
+         <div class="drink">
+          <img src="DrinksImages/image copy 2.png" alt="" width="200" height="200" loading="lazy">
+          <h3>Fanta Drink</h3>
+          <p>P20.00</p>
+          <button class="addToOrder">Add to Order</button>
+         </div>
+
+         <div class="drink">
+          <img src="DrinksImages/image copy 4.png" alt="" width="200" height="200" loading="lazy">
+          <h3>Fanta Drink</h3>
+          <p>P20.00</p>
+          <button class="addToOrder">Add to Order</button>
+         </div>
+       </div>
+       <!-- Dessets section -->
+        <div  class="dessert-heading"><h2>Dessets</h2></div>
+        <div id="dessert" class="desserts">
+          <div class="cake">
+            <img src="Desserts/image copy.png" alt="Vanilla Ice Cream" width="200" height="200">
+            <h3>Vanilla Ice Cream </h3>
+            <p>P10.00</p>
+            <button class="addToOrder">Add to Order</button>
+          </div>
+          <div class="cake">
+            <img src="Desserts/image.png" alt="StrawBerry Ice Cream" width="200" height="200">
+            <h3>StrawBerry Ice Cream </h3>
+            <p>P12.00</p>
+            <button class="addToOrder">Add to Order</button>
+          </div>
+        </div>
+        <div class="checkout-section">
+          <button class="checkout-btn" onclick="window.location.href='payment.html'">
+            <i class="fas fa-credit-card"></i> Proceed to Checkout
+          </button>
+    </div>
+    <!-- Payemnt Button -->
+    
+    </div>
+   </main>
+
+  
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="social">
+        <h2>Find Us</h2>
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="contact">
+        <h2>Contact Us</h2>  
+        <div class="phone">
+          <h3>Phone Number</h3>
+          <p style="font-size: 1.2rem;">+267 76668763</a></p>
+        </div>
+        <div class="email">
+          <h3>Email Us</h3>
+          <p>henry@gmail.com </p>
+        </div>
+        <address>
+          Private Bag 004 <br>
+          Gaborone
+        </address>
+      </div>
+      <div class="conditions">
+        <h2>Terms and Conditions</h2>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <hr style="color: white; width: 50%;margin: 0 auto;">
+    <h4 style="text-align: center; margin-top: 20px;">copyright@ChilliBite</h4>
+  </footer>
+</body>
+</html> 

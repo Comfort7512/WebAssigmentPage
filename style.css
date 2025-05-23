@@ -70,13 +70,18 @@ header{
 }
 
 @media (max-width: 768px) {
-  .navbar {
+/*   .navbar {
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+  } */
+  .navLinks{
     flex-direction: row;
     padding: 1rem;
     justify-content: space-between;
   }
   
-  .hamburger {
+  /* .hamburger {
     display: block;
     z-index: 100;
   }
@@ -116,13 +121,13 @@ header{
   .brand {
     margin-bottom: 0;
     z-index: 100;
-  }
+  } */
 }
 
 /* The hero section */
 .hero{
   min-height: 70vh;
-  background-image: url(images/dark-surface-with-blank-space-fast-food-menu.resized.jpg);
+  background-image: url(HomeImages/dark-surface-with-blank-space-fast-food-menu.resized.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
@@ -146,7 +151,7 @@ header{
   margin-bottom: 5rem;
   padding:1rem 2rem;
   border: none;
-  background-color: rgb(255, 42, 42);
+  background-color: #da000d;
   border-radius:2px ;
   transition: all 0.3s ease;
 }
@@ -160,6 +165,78 @@ header{
 }
 
 
+/* Top Selling Items Section */
+ .top-selling, h1, p{
+  text-align: center;
+  padding: 1rem;
+  
+ }
+  .customer-fav{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+  }
+  .fav{
+    background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  padding: 10px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  width: 200px;
+  }
+  .fav:hover{
+    transform: translateY(-5px);
+   }
+  .fav{
+    width: 100%;
+  }
+  .addToOrder{
+    padding: 1rem;
+    background-color: rgb(255, 40, 40);
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+   }
+   .addToOrder:hover{
+    transform: translateY(-5px);
+   }
+   .view-all-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: #da000d;
+    border: 2px solid #da000d;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+  }
+  
+  .view-all-btn:hover {
+    background-color: #da000d;
+    color: white;
+  }
+  
+  .view-all-btn i {
+    margin-left: 8px;
+  }
+  @media(max-width:760px){
+    .customer-fav{
+      flex-direction: column;
+      gap: 60px;
+    }
+    .fav img{
+      width: 100%;
+    }
+  }
+  
+ 
 /* ABOUT SECTION */
 .about{
   display: flex;
@@ -169,6 +246,7 @@ header{
   margin: 0 auto;
   gap: 2rem;
   padding: 1rem;
+  /* background-color: rgb(242, 242, 242); */
  
 }
 .about img{
@@ -177,9 +255,7 @@ header{
   margin-top: 10px;
   transition: all 0.3s ease;
   display: block;
-  /* max-width: 550px; */
- /*  position: relative;
-  top: 0; */
+  
 }
 .about img:hover{
  transform: scale(1.1);
@@ -254,7 +330,7 @@ header{
 }
 .social h2, .conditions h2, .contact
  h2{
-  color: whitesmoke;
+  color: black;
   font-weight: bold;
   text-align:center ;
   margin-bottom: 2rem;
@@ -269,7 +345,7 @@ header{
 }
 
 .icons i{
- color: black;
+ color: white;
   border-radius: 50%;
   transition: all 0.4s ease;
 }
